@@ -1,0 +1,23 @@
+<!-- Write javascript program to calculate factorial of a number. (using parameter function) -->
+<script> 
+    function func() { 
+       function fact(num)
+        {     
+          if (num < 0){ 
+             return -1; 
+          } 
+          else if(num == 0){ 
+             return 1; 
+          } 
+          else { 
+             let result = 1; 
+             for(var i = num; i > 1; i--){ 
+                result *= i; 
+             }; 
+             return result; 
+          } 
+       }; 
+       const num = 4; 
+       document.getElementById("para").innerHTML = fact(num)
+    }; 
+ </script> 
